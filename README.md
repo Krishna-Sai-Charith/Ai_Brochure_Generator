@@ -1,5 +1,5 @@
 # Ai_Brochure_Generator
-##🧠 AI Brochure Generator using Open Source LLMs
+## 🧠 AI Brochure Generator using Open Source LLMs
 
 This project automatically generates a short, professional brochure for any company website using open-source large language models like **LLaMA 3.2** via **Ollama**.
 
