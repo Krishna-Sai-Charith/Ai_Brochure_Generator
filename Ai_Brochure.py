@@ -200,3 +200,14 @@ def stream_brochure(company_name: str, url: str) -> str:
 # create_brochure("HuggingFace", "https://huggingface.co")
 # OR
 # stream_brochure("HuggingFace", "https://huggingface.co")
+
+view = gr.Interface(
+    fn=stream_brochure,
+    inputs=[
+        gr.Textbox(label="Company name:"),
+        gr.Textbox(label="Landing page URL including http:// or https://"),
+        gr.Dropdown(["GPT", "Claude","llama3.2"], label="Select model")],
+    outputs=[gr.Markdown(label="Brochure:")],
+    flagging_mode="never"
+)
+view.launch()
